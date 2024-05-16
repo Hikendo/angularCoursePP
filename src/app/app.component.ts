@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+//import 'bootstrap';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'course1';
+  public title:string = 'Angular Course';
+  public message : string='Hey estamos comenzando';
+
 }
