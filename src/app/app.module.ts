@@ -7,6 +7,7 @@ import { QuizComponent } from './quiz/quiz.component';
 
 import { CounterModule } from './counter/modules/counter.module';
 import { HeroesModule } from './heroes/modules/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HeroesModule } from './heroes/modules/heroes.module';
     AppRoutingModule,
     CounterModule,
     HeroesModule,
+    DbzModule
   ],
   providers: [
     provideClientHydration()
