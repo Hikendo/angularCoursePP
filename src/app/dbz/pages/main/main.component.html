@@ -1,8 +1,9 @@
 <h1>DBZ main works!</h1>
 <hr>
 <div class="row col">
-    <app-list-dbz [characterList]="characters" (onDeleteCharacter)="onDeleteCharacter($event)"></app-list-dbz>
-    <app-add-dbz-p (onNewCharacter)="onNewCharacter($event)"></app-add-dbz-p>
+    <app-list-dbz [characterList]="characters"
+    (onDeleteCharacter)="onDeleteCharacter($event)"></app-list-dbz>
+    <app-add-dbz-p (onNewCharacter)="addCharacter($event)"></app-add-dbz-p>
 
 
 </div>

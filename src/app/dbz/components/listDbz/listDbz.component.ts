@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { Characters } from '../../interfaces/characters';
+import { v4 as uuid} from 'uuid';
 
 @Component({
   selector: 'app-list-dbz',
@@ -12,16 +13,16 @@ import { Characters } from '../../interfaces/characters';
 export class ListDbzComponent {
   @Input()
   public characterList: Characters[]=[
-    {name: 'Goku', power: 1000}
+    {id:uuid(), name: 'Goku', power: 1000}
 
   ];
 
   @Output()
-  onDeleteCharacter: EventEmitter<number>= new EventEmitter();
+  onDeleteCharacter: EventEmitter<string>= new EventEmitter();
 
 
-    deleteCharacter(index:number):void{
-            this.onDeleteCharacter.emit(index);
+    deleteCharacter(id:string):void{
+            this.onDeleteCharacter.emit(id);
 
 
     }

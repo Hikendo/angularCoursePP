@@ -29,7 +29,7 @@
         }">{{i+1}}</td>
           <td scope="row">{{character.name}}</td>
           <td>{{character.power}}</td>
-          <td><button class="btn btn-danger" (click)="deleteCharacter(i)">X</button></td>
+          <td><button class="btn btn-danger" (click)="deleteCharacter(character.id)">X</button></td>
         </tr>
 
       </tbody>

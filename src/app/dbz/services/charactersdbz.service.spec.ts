@@ -1,13 +1,14 @@
 import { TestBed } from '@angular/core/testing';
+import { CharactersDbzService } from './charactersDbz.service';
 
-import { CharactersdbzService } from './charactersdbz.service';
+
 
 describe('CharactersdbzService', () => {
-  let service: CharactersdbzService;
+  let service: CharactersDbzService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(CharactersdbzService);
+    service = TestBed.inject(CharactersDbzService);
   });
 
   it('should be created', () => {
