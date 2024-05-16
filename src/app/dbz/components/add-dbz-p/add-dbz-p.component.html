@@ -1,11 +1,12 @@
 <div class="mb3">
-  <form>
+  <form class="row" (ngSubmit)="emitCharacter()">
       <div class="mb-3">
         <label for="name" class="form-label ">Nombre del personaje</label>
         <input
           type="text"
           name="name"
           id="name"
+          [(ngModel)]="character.name"
           class="form-control"
           placeholder="Name"
         />
@@ -17,6 +18,7 @@
           name="power"
           id="power"
           class="form-control"
+          [(ngModel)]="character.power"
           placeholder="Poder de Combate"
         />
       </div>
@@ -26,12 +28,7 @@
       >
         Agregar
       </button>
-      <button
-        type="submit"
-        class="btn btn-outline-danger mb-2"
-      >
-        Borrar
-      </button>
+      
 
 </form>
 
